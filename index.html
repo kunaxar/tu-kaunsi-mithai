@@ -82,7 +82,7 @@ button.primary{background:var(--gold);color:var(--ink);border-color:var(--gold)}
 
 <div class="btnrow hide" id="btns">
 <button onclick="again()">Dusri mithai</button>
-<button class="primary" id="copybtn" onclick="copyCard()">Card copy karo</button>
+<button class="primary" id="copybtn" onclick="copyCard()">Text copy karo</button>
 </div>
 
 <div class="foot">Tu Kaunsi Mithai Hai? · Diwali 2026</div>
@@ -113,11 +113,16 @@ document.getElementById('picker').classList.remove('hide');
 document.getElementById('introline').classList.remove('hide');
 document.getElementById('card').classList.add('hide');
 document.getElementById('btns').classList.add('hide')}
-function copyCard(){var d=D[cur];
+function copyCard(){var d=D[cur];if(!d)return;
 var t="Tum ho: "+d.n+" - "+d.t+"\n"+d.l.join("\n")+"\n"+d.e+"\nTu Kaunsi Mithai Hai? - Diwali 2026";
-if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok,fallback)}else{fallback()}
-function ok(){document.getElementById('copybtn').textContent="Copy ho gaya";setTimeout(function(){document.getElementById('copybtn').textContent="Card copy karo"},1800)}
-function fallback(){var ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(ta);ok()}}
+function reset(){document.getElementById('copybtn').textContent="Text copy karo"}
+function ok(){document.getElementById('copybtn').textContent="Copy ho gaya";setTimeout(reset,1800)}
+function manual(){var ta=document.getElementById('manualcopy');
+if(!ta){ta=document.createElement('textarea');ta.id='manualcopy';ta.readOnly=true;ta.rows=5;ta.style.cssText='width:100%;margin-top:10px;font-size:13px;padding:8px;border-radius:10px;border:1px solid var(--gold);background:rgba(255,246,227,.08);color:var(--cream)';document.getElementById('btns').appendChild(ta);}
+ta.value=t;ta.style.display='block';ta.focus();ta.select();
+document.getElementById('copybtn').textContent="Copy nahi hua - text select karke copy karo";setTimeout(reset,5000)}
+function fallback(){var ta=document.createElement('textarea');ta.value=t;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.focus();ta.select();var r=false;try{r=document.execCommand('copy')}catch(e){}document.body.removeChild(ta);if(r){ok()}else{manual()}}
+if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok,fallback)}else{fallback()}}
 </script>
 </body>
-  </html>
+</html>
