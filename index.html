@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tu Kaunsi Mithai Hai? - Diwali 2026</title>
+<meta property="og:title" content="Tu Kaunsi Mithai Hai?">
+<meta property="og:description" content="Ek tap mein jaan lo ki tumhari Diwali mithai kaunsi hai. Funny personality card andar hai.">
+<meta name="theme-color" content="#3b0a1e">
+<style>
+:root{--bg1:#2b0716;--bg2:#4a0f24;--gold:#f6c453;--cream:#fff6e3;--ink:#3b0a1e}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:linear-gradient(160deg,var(--bg1),var(--bg2) 70%,#5c1230);color:var(--cream);min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:26px 16px 40px}
+h1{color:var(--gold);font-size:26px;text-align:center;letter-spacing:.3px}
+.sub{margin-top:6px;font-size:13.5px;color:#f2d9c0;text-align:center;max-width:330px;line-height:1.5}
+.lamps{margin-bottom:10px}
+.lamp{width:34px;height:34px;margin:0 5px;display:inline-block}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px;max-width:360px;width:100%}
+.m{background:rgba(255,246,227,.07);border:1px solid rgba(246,196,83,.35);border-radius:16px;padding:16px 10px 13px;text-align:center;cursor:pointer;transition:transform .12s,border-color .12s}
+.m:active{transform:scale(.95);border-color:var(--gold)}
+.m .art{height:64px;display:flex;align-items:center;justify-content:center;margin-bottom:9px}
+.m .nm{font-size:15px;font-weight:600;color:var(--cream)}
+
+.card{background:var(--cream);color:var(--ink);border-radius:20px;padding:24px 20px 16px;max-width:360px;width:100%;margin-top:20px;text-align:center;box-shadow:0 10px 40px rgba(0,0,0,.45);border:3px solid var(--gold)}
+.card .festi{font-size:11px;letter-spacing:2px;color:#a15c07;font-weight:700}
+.card .art{height:96px;display:flex;align-items:center;justify-content:center;margin:8px 0 4px}
+.card h2{font-size:23px;color:var(--ink);letter-spacing:.5px}
+.card .tag{font-size:13px;color:#a15c07;font-weight:700;margin:2px 0 10px}
+.card p{font-size:14px;line-height:1.55;margin:7px 0;color:#4a1a2b}
+.card .lines{border-top:1px dashed #d9b98a;border-bottom:1px dashed #d9b98a;padding:8px 0;margin:10px 0 6px}
+.credit{margin-top:12px;font-size:11.5px;color:#7a4a12}
+.credit a{color:#a15c07;font-weight:700;text-decoration:none;border-bottom:1px solid #d9b98a}
+.btnrow{margin-top:14px;display:flex;gap:10px;max-width:360px;width:100%}
+button{flex:1;padding:12px 8px;border-radius:12px;border:1px solid rgba(246,196,83,.5);background:transparent;color:var(--cream);font-size:13.5px;font-weight:600;cursor:pointer}
+button.primary{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+.foot{margin-top:26px;font-size:11px;color:#caa08a;text-align:center}
+/* CSS mithai art */
+.kk{width:46px;height:46px;background:linear-gradient(135deg,#f8f8f8,#cfd3d9 45%,#f4f6f8 60%,#c2c7cf);transform:rotate(45deg);border-radius:6px;box-shadow:inset 0 0 0 2px rgba(255,255,255,.7),0 3px 8px rgba(0,0,0,.3)}
+.kk.big{width:74px;height:74px}
+.gj{width:56px;height:56px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#a4561f,#6e3410 65%,#552408);box-shadow:0 3px 8px rgba(0,0,0,.35)}
+.gj.big{width:86px;height:86px}
+.sp{width:50px;height:50px;border-radius:8px;background:repeating-linear-gradient(45deg,#efe0bd 0 3px,#e3cfa2 3px 6px);box-shadow:inset 0 0 0 2px #d9c08d,0 3px 8px rgba(0,0,0,.3)}
+.sp.big{width:78px;height:78px}
+.ld{width:54px;height:54px;border-radius:50%;background:radial-gradient(circle at 30% 25%,#f5a623,#e07f0e 60%,#c96a05);position:relative}
+.ld:after{content:"";position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 62% 34%,#c96a05 2px,transparent 3px),radial-gradient(circle at 38% 60%,#c96a05 2px,transparent 3px),radial-gradient(circle at 66% 66%,#c96a05 2px,transparent 3px),radial-gradient(circle at 30% 38%,#c96a05 2px,transparent 3px)}
+.ld.big{width:84px;height:84px}
+.bf{width:50px;height:50px;border-radius:8px;background:linear-gradient(160deg,#fff8f0,#f3e2d4);position:relative;box-shadow:inset 0 0 0 2px #ecd6c3,0 3px 8px rgba(0,0,0,.3)}
+.bf:after{content:"";position:absolute;top:6px;left:6px;width:7px;height:7px;border-radius:50%;background:#7fb069;box-shadow:32px 30px 0 #7fb069}
+.bf.big{width:78px;height:78px}
+.jal{width:62px;height:62px}
+.jal.big{width:92px;height:92px}
+.hide{display:none}
+</style>
+</head>
+<body>
+<div class="lamps">
+<svg class="lamp" viewBox="0 0 40 40"><ellipse cx="20" cy="30" rx="14" ry="6" fill="#8a5a2b"/><path d="M6 30 Q20 22 34 30 L30 33 Q20 27 10 33 Z" fill="#a06a35"/><path d="M20 6 C24 12 24 16 20 19 C16 16 16 12 20 6Z" fill="#ffcf5c"/><circle cx="20" cy="19" r="3" fill="#ff9d2e"/></svg>
+<svg class="lamp" viewBox="0 0 40 40"><ellipse cx="20" cy="30" rx="14" ry="6" fill="#8a5a2b"/><path d="M6 30 Q20 22 34 30 L30 33 Q20 27 10 33 Z" fill="#a06a35"/><path d="M20 6 C24 12 24 16 20 19 C16 16 16 12 20 6Z" fill="#ffcf5c"/><circle cx="20" cy="19" r="3" fill="#ff9d2e"/></svg>
+<svg class="lamp" viewBox="0 0 40 40"><ellipse cx="20" cy="30" rx="14" ry="6" fill="#8a5a2b"/><path d="M6 30 Q20 22 34 30 L30 33 Q20 27 10 33 Z" fill="#a06a35"/><path d="M20 6 C24 12 24 16 20 19 C16 16 16 12 20 6Z" fill="#ffcf5c"/><circle cx="20" cy="19" r="3" fill="#ff9d2e"/></svg>
+</div>
+<h1>Tu Kaunsi Mithai Hai?</h1>
+<div class="sub" id="introline">Diwali pe sabki ek mithai hoti hai. Apni favourite pe tap kar, dekh woh tere baare mein kya kehti hai.</div>
+
+<div class="grid" id="picker">
+<div class="m" onclick="pick('kaju')"><div class="art"><div class="kk"></div></div><div class="nm">Kaju Katli</div></div>
+<div class="m" onclick="pick('gulab')"><div class="art"><div class="gj"></div></div><div class="nm">Gulab Jamun</div></div>
+<div class="m" onclick="pick('soan')"><div class="art"><div class="sp"></div></div><div class="nm">Soan Papdi</div></div>
+<div class="m" onclick="pick('ladoo')"><div class="art"><div class="ld"></div></div><div class="nm">Ladoo</div></div>
+<div class="m" onclick="pick('barfi')"><div class="art"><div class="bf"></div></div><div class="nm">Barfi</div></div>
+<div class="m" onclick="pick('jalebi')"><div class="art"><svg class="jal" viewBox="0 0 60 60"><path d="M30 6 C48 6 54 20 48 30 C43 38 32 38 29 31 C26 25 33 19 38 23 C42 26 39 32 34 30" fill="none" stroke="#f08c1e" stroke-width="5.5" stroke-linecap="round"/><path d="M22 54 C8 50 4 38 11 30" fill="none" stroke="#f08c1e" stroke-width="5.5" stroke-linecap="round"/></svg></div><div class="nm">Jalebi</div></div>
+</div>
+
+<div class="card hide" id="card">
+<div class="festi">DIWALI 2026</div>
+<div class="art" id="cart"></div>
+<h2 id="cname"></h2>
+<div class="tag" id="ctag"></div>
+<div class="lines" id="clines"></div>
+<p id="ctail" style="font-weight:600"></p>
+<div class="credit">Made with meetha by <a href="https://kunal-product.vercel.app" target="_blank" rel="noopener">Kunal Vardani</a> · Meet the maker</div>
+</div>
+
+<div class="btnrow hide" id="btns">
+<button onclick="again()">Dusri mithai</button>
+<button class="primary" id="copybtn" onclick="copyCard()">Card copy karo</button>
+</div>
+
+<div class="foot">Tu Kaunsi Mithai Hai? · Diwali 2026</div>
+
+<script>
+var D={
+kaju:{n:"KAJU KATLI",t:"Premium by birth",a:'<div class="kk big"></div>',l:["Kisi bhi dabbe mein sabse pehle tum hi uthaye jaate ho.","Kam bolte ho, impression zyada chhodte ho.","Log kehte hain attitude hai. Actually standard hai."],e:"Silver varq nahi, personality hai."},
+gulab:{n:"GULAB JAMUN",t:"Main character energy",a:'<div class="gj big"></div>',l:["Garam, soft, har dil ke kareeb.","Jis function mein tum ho, wahan comfort zone ban jaata hai.","Sabko lagta hai tum unke favourite ho. Aur sach yehi hai."],e:"Chashni mein doobe hue ho, drama mein nahi."},
+soan:{n:"SOAN PAPDI",t:"Underrated legend",a:'<div class="sp big"></div>',l:["Har ghar tum pahunchte ho, kahin bhi rookte nahi.","Log haste hain, par dabba khulte hi pehla haath tumhari taraf jaata hai.","2019 se zinda ho aur abhi bhi crisp. Ye talent hai."],e:"Forward hona bhi ek superpower hai."},
+ladoo:{n:"LADOO",t:"Celebration ka full form",a:'<div class="ld big"></div>',l:["Kisi bhi khushi ka doosra naam tum ho.","Simple life, high happiness, zero showbaazi.","Ghar wapas aane ka ehsaas agar mithai hota, toh tum hote."],e:"Haath ke bane, dil ke close."},
+barfi:{n:"BARFI",t:"Reliable classic",a:'<div class="bf big"></div>',l:["Fancy nahi, zaroori ho. Bada fark hai.","Har generation tumhe respect deti hai.","Jo 'simple' bol ke nikal jaate hain, unhe samajhna abhi baaki hai."],e:"Trend aate jaate hain, tum base ho."},
+jalebi:{n:"JALEBI",t:"Plot twist personified",a:'<svg class="jal big" viewBox="0 0 60 60"><path d="M30 6 C48 6 54 20 48 30 C43 38 32 38 29 31 C26 25 33 19 38 23 C42 26 39 32 34 30" fill="none" stroke="#f08c1e" stroke-width="5.5" stroke-linecap="round"/><path d="M22 54 C8 50 4 38 11 30" fill="none" stroke="#f08c1e" stroke-width="5.5" stroke-linecap="round"/></svg>',l:["Seedhi baat bhi gol-gol ghoom ke aati hai.","Thodi tedhi, poori meethi.","Tere bina gathering boring hai, sabko pata hai."],e:"Garma garam, hamesha."}
+};
+var cur=null;
+function pick(k){var d=D[k];cur=k;
+document.getElementById('cart').innerHTML=d.a;
+document.getElementById('cname').textContent="TUM HO: "+d.n;
+document.getElementById('ctag').textContent=d.t;
+document.getElementById('clines').innerHTML=d.l.map(function(x){return "<p>"+x+"</p>"}).join("");
+document.getElementById('ctail').textContent=d.e;
+document.getElementById('picker').classList.add('hide');
+document.getElementById('introline').classList.add('hide');
+document.getElementById('card').classList.remove('hide');
+document.getElementById('btns').classList.remove('hide');
+window.scrollTo(0,0)}
+function again(){cur=null;
+document.getElementById('picker').classList.remove('hide');
+document.getElementById('introline').classList.remove('hide');
+document.getElementById('card').classList.add('hide');
+document.getElementById('btns').classList.add('hide')}
+function copyCard(){var d=D[cur];
+var t="Tum ho: "+d.n+" - "+d.t+"\n"+d.l.join("\n")+"\n"+d.e+"\nTu Kaunsi Mithai Hai? - Diwali 2026";
+if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok,fallback)}else{fallback()}
+function ok(){document.getElementById('copybtn').textContent="Copy ho gaya";setTimeout(function(){document.getElementById('copybtn').textContent="Card copy karo"},1800)}
+function fallback(){var ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(ta);ok()}}
+</script>
+</body>
+  </html>
